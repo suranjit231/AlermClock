@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+    font-family:sans-serif;
+}
+
+
+.body-container{
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(to bottom, red, yellow, #1e90ff); */
+    /* background: linear-gradient(45deg,rgb(3, 24, 22),rgb(255, 51, 0));  */
+    background-color: #05050e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.watch-contatiner{
+    background-color: #05051b;
+    padding: 20px 20px;
+    padding-top: 30px;
+    box-shadow: 0 0 3px #0ef;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border-radius: 10%;
+    border-bottom: 5px solid #008000;
+    transition: 0.4s ease-in-out;
+    
+    
+}
+
+.watch-contatiner:hover{
+    box-shadow:0 0 5px #fff,0 0 15px #0fff,0 0 25px #fff,0 0 50px #fff,0 0 75px #fff,0 0 120px #fff;
+}
+
+
+.watch-contatiner>h1{
+    margin-bottom: 15px;
+    color: #c0c0c0;
+}
+
+.SetAlerm-Box{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.time-inputContainer select{
+    padding: 10px 6px;
+    background-color: #041a46;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.time-inputContainer select:hover{
+    background-color: #05051b;
+    box-shadow:  0 0 5px #fff,0 0 15px #0fff,0 0 25px #fff,0 0 50px #fff;
+
+}
+
+.time-inputContainer select::-webkit-scrollbar{
+    width: 0;
+    background: transparent;
+}
+
+
+.SetAlerm-Box #setTimeBtn{
+        height: 40px;
+        padding: 10px;
+        border-radius: 10px;
+        line-height: 10px;
+        outline: none;
+        background-color: rgb(5, 5, 24);
+        color: #c0c0c0;
+        font-size: 17px;
+        font-weight: 700;
+        cursor: pointer;
+        box-shadow: 0 0 3px #fff;
+        border: none;
+        transition: 0.4s ease-in-out;
+}
+
+.SetAlerm-Box #setTimeBtn:hover{
+    background-color:red;
+    box-shadow: 0 0 5px #03e9f4,0 0 15px #03e9f4,0 0 25px #03e9f4,0 0 50px #03e9f4,0 0 100px #03e9f4;
+}
+
+.AlermList-box{
+  
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    scrollbar-width: 0px;
+}
+
+.AlermList-box::-webkit-scrollbar {
+    width: 0px; 
+    background: transparent; 
+}
+
+
+
+.watch-contatiner h3{
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+   
+    margin-bottom: 10px;
+    text-align: start;
+    padding: 0px 20px;
+}
+
+.divider{
+    width: 90%;
+    height: 3px;
+    margin-bottom: 4px;
+    background-color: #03e9f4;
+}
+
+.Alerm-List{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Alerm-Time{
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 2px solid #fff; */
+    margin-bottom: 5px;
+    align-items: center;
+    padding: 10px 10px;
+    transition: 0.4s ease-in-out;
+    border-radius: 10px;
+   
+
+}
+
+.Alerm-Time:hover{
+   
+    background-color: #041a46;
+}
+
+.Alerm-Time span{
+    font-size: 17px;
+    font-weight: 700;
+    color: #c0c0c0;
+}
+
+.Alerm-Time button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 25px;
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
+    border: none;
+    background-color: #900;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.4s ease-in-out;
+}
+
+.Alerm-Time button:hover{
+    box-shadow:  0 0 5px #fff,0 0 15px #0fff,0 0 25px #fff,0 0 50px #fff,0 0 100px #fff;
+    background-color: rgb(29, 2, 2);
+}
+
